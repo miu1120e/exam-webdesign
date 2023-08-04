@@ -12,3 +12,67 @@
   color: var(--txt);
 }
 
+.inner {
+  background: lightblue;
+  display: flex;
+}
+header {
+  background: lightpink;
+  width: 200px;
+}
+.logo a {
+  display: block;
+  /* text-align: center; */
+  /* img태그가 inline일 경우 */
+}
+.logo img {
+  display: block;
+  margin: auto;
+}
+
+#gnb .depth1 {
+  padding: 0 30px;
+}
+#gnb .depth1 > li > a {
+  display: block;
+  position: relative;
+  padding: 11px 0 8px;
+  border-bottom: 1px solid #000;
+  font-size: 16px;
+}
+
+#gnb .depth1 a::hover {
+  color: #fff;
+}
+#gnb .depth1 a:after {
+  content: ">";
+  position: absolute;
+  top: 10px;
+  right: 0;
+  opacity: 0.5;
+}
+
+#gnb .depth2 {
+  padding-top: 10px;
+}
+#gnb .depth2 a {
+  /* display: none; */
+  display: block;
+  padding: 5px 10px;
+  font-size: 12px;
+  color: #000;
+}
+#gnb .depth2 a:hover {
+  background: rgb(91, 1, 94);
+  color: #fff;
+}
+
+main {
+  /* width: calc(100% - 200px); */
+  flex-grow: 1;
+  background: lightgoldenrodyellow;
+}
+footer {
+  background: lightgreen;
+  height: 100px;
+}
