@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/* reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  line-height: 1.5;
+  color: var(--txt);
+}
+
